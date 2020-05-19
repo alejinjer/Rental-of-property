@@ -12,7 +12,7 @@ public interface UserClient {
                         @RequestParam(value = "password", required = true) String password);
 
     @PostMapping("/auth")
-    public ResponseEntity<String> sign_up(@RequestBody @RequestParam(value = "id", required = true) String id,
+    public ResponseEntity<String> sign_up(@RequestBody
                                           @RequestParam(value = "username", required = true) String username,
                                           @RequestParam(value = "password", required = true) String password,
                                           @RequestParam(value = "name", required = true) String name,

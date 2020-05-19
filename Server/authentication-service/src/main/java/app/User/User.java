@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Data
 public class User {
     @Id @GeneratedValue(strategy= GenerationType.AUTO)
-    private String id;
+    private Integer id;
     private String username;
     private String password;
     private String name;
@@ -31,11 +31,11 @@ public class User {
     }
 
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

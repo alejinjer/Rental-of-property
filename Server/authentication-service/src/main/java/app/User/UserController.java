@@ -32,19 +32,19 @@ public class UserController {
     }
 
     @PostMapping("/auth")
-    public ResponseEntity<String> sign_up(@RequestBody @RequestParam(value = "id", required = true) String id,
+    public String sign_up(@RequestBody
                                           @RequestParam(value = "username", required = true) String username,
                                           @RequestParam(value = "password", required = true) String password,
                                           @RequestParam(value = "name", required = true) String name,
                                           @RequestParam(value = "surname", required = true) String surname,
                                           @RequestParam(value = "email", required = true) String email,
                                           @RequestParam(value = "phone", required = true) String phone) {
+        List<User> resultList = new ArrayList<>();
         Optional<User> test = userRepository.findByUsername(username);
         if (test.isPresent()) {
-            return ResponseEntity.ok("{}");
+            return "{}";
         }
         User user = new User();
-        user.setId(id);
         user.setUsername(username);
         user.setPassword(password);
         user.setName(name);
@@ -52,6 +52,9 @@ public class UserController {
         user.setEmail(email);
         user.setPhone(phone);
         userRepository.save(user);
-        return ResponseEntity.ok(user.toString());
+        resultList.add(user);
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        String prettyJson = gson.toJson(resultList);
+        return prettyJson;
     }
 }
