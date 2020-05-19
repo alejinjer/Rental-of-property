@@ -7,7 +7,7 @@ RUN mvn -B -s /usr/share/maven/ref/settings-docker.xml package
 
 FROM java:8-jre-alpine
 
-EXPOSE 8080
+EXPOSE 8082
 
 RUN mkdir /app
 COPY --from=MAVEN_TOOL_CHAIN /tmp/target/*.jar /app/spring-boot-application.jar
@@ -16,4 +16,4 @@ RUN apk add --no-cache bash
 ADD https://raw.githubusercontent.com/vishnubob/wait-for-it/master/wait-for-it.sh wait-for-it.sh
 RUN chmod +x wait-for-it.sh
 
-CMD ./wait-for-it.sh authentication-service:8081 --strict --timeout=180 -- java -jar /app/spring-boot-application.jar
+CMD ./wait-for-it.sh eureka-service:8761 --strict --timeout=180 -- java -jar /app/spring-boot-application.jar
