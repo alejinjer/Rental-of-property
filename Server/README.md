@@ -1,15 +1,21 @@
-### You need:
+## auth sercice
 
-docker<br>
-docker compose
+**GET** localhost:8080/auth?username=&password=
+Returns user with following login and password
 
-### Run the following commands in terminal window:
-```
-cd lab2
-docker-compose build
-docker-compose up --scale eureka-client=2
-```
-Eureka Server URL: http://localhost:8761<br>
-API-Gateway URL: http://localhost:8080<br>
-Service 1 URL: http://localhost:8081<br>
-Service 2 URL: http://localhost:8082<br>
+**POST** localhost:8080/auth?username=&password=&name=&surname=&email=&phone=
+Create a new user
+
+## search service
+
+**GET** localhost:8080/apartments
+Returns a list of apartments
+
+**POST** localhost:8080/apartments?flats_number=&cost=&description=&address=&img_url=
+Creates a new apartment
+
+**PUT** localhost:8080/apartments?id=flats_number=&cost=&description=&address=&img_url=
+Updates an apartment
+
+**DELETE** localhost:8080/apartments?id=
+Deletes an apartment
