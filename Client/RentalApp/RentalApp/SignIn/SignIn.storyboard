@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iJQ-tv-zAX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In-->
+        <scene sceneID="Lo6-58-TE1">
+            <objects>
+                <viewController storyboardIdentifier="SignIn" title="Sign In" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iJQ-tv-zAX" customClass="SignInViewController" customModule="RentalApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L6M-7K-Jj8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="V1E-sG-LQU">
+                                <rect key="frame" x="82" y="343.5" width="250" height="219"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pr7-ra-ZIY">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u3r-kH-voZ">
+                                        <rect key="frame" x="0.0" y="35.5" width="250" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kud-Yk-UCv">
+                                        <rect key="frame" x="0.0" y="84.5" width="250" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aRo-XS-wTs">
+                                        <rect key="frame" x="0.0" y="120" width="250" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFZ-JW-9j5">
+                                        <rect key="frame" x="0.0" y="169" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NXo-zH-Vv2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <state key="normal" title="Submit">
+                                            <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitButtonTapped:" destination="iJQ-tv-zAX" eventType="touchUpInside" id="8Ua-Dr-KQx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="XJt-5p-o00"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="V1E-sG-LQU" firstAttribute="centerY" secondItem="BYy-PL-92O" secondAttribute="centerY" id="Yb4-zT-JTO"/>
+                            <constraint firstItem="V1E-sG-LQU" firstAttribute="centerX" secondItem="BYy-PL-92O" secondAttribute="centerX" id="bO5-Ul-ZpX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BYy-PL-92O"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="aRo-XS-wTs" id="JHg-31-Nc4"/>
+                        <outlet property="submitButton" destination="cFZ-JW-9j5" id="Y4d-iO-MO8"/>
+                        <outlet property="usernameTextField" destination="u3r-kH-voZ" id="crj-yx-IVX"/>
+                        <segue destination="c3P-MA-2dd" kind="show" identifier="goToMenu" id="iuu-oC-1d4"/>
+                        <segue destination="g3n-h1-dvW" kind="show" identifier="goToAdmin" id="7Xc-b6-hFf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4cl-Dz-VvU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="314" y="-271"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="N4W-rx-Abd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Menu" id="c3P-MA-2dd" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ndQ-Kx-IJd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZ3-Pc-SsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1091" y="-351"/>
+        </scene>
+        <!--AdminViewController-->
+        <scene sceneID="c4K-Oo-QG9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Admin" referencedIdentifier="AdminViewController" id="g3n-h1-dvW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hMc-S1-dNq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CEX-c0-RD9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="-259"/>
+        </scene>
+    </scenes>
+</document>
