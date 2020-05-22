@@ -18,6 +18,11 @@
 		779394BD247455570071438F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779394BC247455570071438F /* ViewController.swift */; };
 		77BB01A62476F222004483E9 /* AdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB01A52476F222004483E9 /* AdminViewController.swift */; };
 		77BB01A82476F22A004483E9 /* Admin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77BB01A72476F22A004483E9 /* Admin.storyboard */; };
+		77BB01AB2476F730004483E9 /* Apartment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB01AA2476F730004483E9 /* Apartment.swift */; };
+		77BB01AD2476F7D9004483E9 /* ApartmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB01AC2476F7D9004483E9 /* ApartmentTableViewCell.swift */; };
+		77BB01AF2476F7EE004483E9 /* ApartmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77BB01AE2476F7EE004483E9 /* ApartmentTableViewCell.xib */; };
+		77BB01B22476FA17004483E9 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB01B12476FA17004483E9 /* ImageView.swift */; };
+		77BB01B4247702BB004483E9 /* NewApartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BB01B3247702BB004483E9 /* NewApartmentViewController.swift */; };
 		77BF0C8E2472F1E8007E422B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF0C8D2472F1E8007E422B /* AppDelegate.swift */; };
 		77BF0C902472F1E8007E422B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF0C8F2472F1E8007E422B /* SceneDelegate.swift */; };
 		77BF0C922472F1E8007E422B /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BF0C912472F1E8007E422B /* InitialViewController.swift */; };
@@ -42,6 +47,11 @@
 		779394BC247455570071438F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		77BB01A52476F222004483E9 /* AdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminViewController.swift; sourceTree = "<group>"; };
 		77BB01A72476F22A004483E9 /* Admin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Admin.storyboard; sourceTree = "<group>"; };
+		77BB01AA2476F730004483E9 /* Apartment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apartment.swift; sourceTree = "<group>"; };
+		77BB01AC2476F7D9004483E9 /* ApartmentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentTableViewCell.swift; sourceTree = "<group>"; };
+		77BB01AE2476F7EE004483E9 /* ApartmentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApartmentTableViewCell.xib; sourceTree = "<group>"; };
+		77BB01B12476FA17004483E9 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		77BB01B3247702BB004483E9 /* NewApartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewApartmentViewController.swift; sourceTree = "<group>"; };
 		77BF0C8A2472F1E8007E422B /* RentalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BF0C8D2472F1E8007E422B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77BF0C8F2472F1E8007E422B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +102,7 @@
 			children = (
 				779394BA247451B90071438F /* TextField.swift */,
 				779394BC247455570071438F /* ViewController.swift */,
+				77BB01B12476FA17004483E9 /* ImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -108,10 +119,30 @@
 		77BB01A42476F1FC004483E9 /* Admin */ = {
 			isa = PBXGroup;
 			children = (
+				77BB01B02476F942004483E9 /* ApartmentCell */,
 				77BB01A52476F222004483E9 /* AdminViewController.swift */,
+				77BB01B3247702BB004483E9 /* NewApartmentViewController.swift */,
 				77BB01A72476F22A004483E9 /* Admin.storyboard */,
 			);
 			path = Admin;
+			sourceTree = "<group>";
+		};
+		77BB01A92476F71D004483E9 /* Modal Objects */ = {
+			isa = PBXGroup;
+			children = (
+				779394B72474490C0071438F /* User.swift */,
+				77BB01AA2476F730004483E9 /* Apartment.swift */,
+			);
+			path = "Modal Objects";
+			sourceTree = "<group>";
+		};
+		77BB01B02476F942004483E9 /* ApartmentCell */ = {
+			isa = PBXGroup;
+			children = (
+				77BB01AC2476F7D9004483E9 /* ApartmentTableViewCell.swift */,
+				77BB01AE2476F7EE004483E9 /* ApartmentTableViewCell.xib */,
+			);
+			path = ApartmentCell;
 			sourceTree = "<group>";
 		};
 		77BF0C812472F1E8007E422B = {
@@ -135,6 +166,7 @@
 		77BF0C8C2472F1E8007E422B /* RentalApp */ = {
 			isa = PBXGroup;
 			children = (
+				77BB01A92476F71D004483E9 /* Modal Objects */,
 				77BB01A42476F1FC004483E9 /* Admin */,
 				778C485E2476980D0046C727 /* Profile */,
 				779394BE247457100071438F /* Menu */,
@@ -146,7 +178,6 @@
 				77BF0C8F2472F1E8007E422B /* SceneDelegate.swift */,
 				77BF0C962472F1EB007E422B /* Assets.xcassets */,
 				77BF0C9B2472F1EB007E422B /* Info.plist */,
-				779394B72474490C0071438F /* User.swift */,
 				778C485A247694DB0046C727 /* GlobalData.swift */,
 			);
 			path = RentalApp;
@@ -257,6 +288,7 @@
 				77BF0C952472F1E8007E422B /* Main.storyboard in Resources */,
 				778C48622476982E0046C727 /* Profile.storyboard in Resources */,
 				77BF0CAD2472F73D007E422B /* SignUp.storyboard in Resources */,
+				77BB01AF2476F7EE004483E9 /* ApartmentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,17 +341,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77BB01B4247702BB004483E9 /* NewApartmentViewController.swift in Sources */,
 				77BB01A62476F222004483E9 /* AdminViewController.swift in Sources */,
 				77BF0CA22472F64A007E422B /* SignInViewController.swift in Sources */,
 				77BF0C922472F1E8007E422B /* InitialViewController.swift in Sources */,
 				778C4860247698190046C727 /* ProfileViewController.swift in Sources */,
 				779394B82474490C0071438F /* User.swift in Sources */,
 				778C486424769C830046C727 /* MenuViewController.swift in Sources */,
+				77BB01B22476FA17004483E9 /* ImageView.swift in Sources */,
 				779394BB247451B90071438F /* TextField.swift in Sources */,
 				77BF0C8E2472F1E8007E422B /* AppDelegate.swift in Sources */,
 				77BF0C902472F1E8007E422B /* SceneDelegate.swift in Sources */,
 				778C485B247694DB0046C727 /* GlobalData.swift in Sources */,
+				77BB01AD2476F7D9004483E9 /* ApartmentTableViewCell.swift in Sources */,
 				779394BD247455570071438F /* ViewController.swift in Sources */,
+				77BB01AB2476F730004483E9 /* Apartment.swift in Sources */,
 				77BF0CA42472F652007E422B /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,16 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Admin View Controller-->
+        <!--List of apartments-->
         <scene sceneID="Q6h-MO-vU2">
             <objects>
-                <viewController id="4KO-6W-bjy" customClass="AdminViewController" customModule="RentalApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdminViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4KO-6W-bjy" customClass="AdminViewController" customModule="RentalApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CaE-gL-rZd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DpR-9f-Fhf">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -29,10 +29,101 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="krf-mv-lMz"/>
                     </view>
+                    <navigationItem key="navigationItem" title="List of apartments" id="sfs-AT-aDJ">
+                        <barButtonItem key="rightBarButtonItem" title="New" id="kwd-1R-cVt">
+                            <connections>
+                                <action selector="addNewApartmentButtonTapped:" destination="4KO-6W-bjy" id="XLK-FB-02q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="DpR-9f-Fhf" id="DUX-9Q-Tmb"/>
+                        <segue destination="X7c-x4-TyU" kind="show" identifier="goToApartmentVC" id="iYD-nl-kUf"/>
+                        <segue destination="X7c-x4-TyU" kind="show" identifier="goToApartmentEditing" id="daL-A3-F57"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsJ-HM-tWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="68" y="73"/>
         </scene>
+        <!--New Apartment View Controller-->
+        <scene sceneID="G08-fF-g3l">
+            <objects>
+                <viewController id="X7c-x4-TyU" customClass="NewApartmentViewController" customModule="RentalApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f1X-mt-CCk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="UXQ-Dz-EkM">
+                                <rect key="frame" x="20" y="98" width="374" height="403"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Js-0a-jq9">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="62"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MPv-pj-2RM">
+                                        <rect key="frame" x="0.0" y="68" width="374" height="62.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IS3-po-VYa">
+                                        <rect key="frame" x="0.0" y="136.5" width="374" height="62"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ua-pP-u0T">
+                                        <rect key="frame" x="0.0" y="204.5" width="374" height="62.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QAK-YL-LuW">
+                                        <rect key="frame" x="0.0" y="273" width="374" height="62"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEF-iK-CLw">
+                                        <rect key="frame" x="0.0" y="341" width="374" height="62"/>
+                                        <state key="normal" title="Accept"/>
+                                        <connections>
+                                            <action selector="acceptButtonTapped:" destination="X7c-x4-TyU" eventType="touchUpInside" id="k8G-1E-qvJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UXQ-Dz-EkM" firstAttribute="top" secondItem="qKG-9J-ut8" secondAttribute="top" constant="10" id="HTi-FU-FwA"/>
+                            <constraint firstItem="UXQ-Dz-EkM" firstAttribute="leading" secondItem="qKG-9J-ut8" secondAttribute="leading" constant="20" id="U5m-Yj-K3n"/>
+                            <constraint firstItem="qKG-9J-ut8" firstAttribute="trailing" secondItem="UXQ-Dz-EkM" secondAttribute="trailing" constant="20" id="V1d-mY-cW8"/>
+                            <constraint firstItem="UXQ-Dz-EkM" firstAttribute="height" secondItem="f1X-mt-CCk" secondAttribute="height" multiplier="0.45" id="edd-OF-czR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qKG-9J-ut8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZbN-Rp-gTu">
+                        <barButtonItem key="rightBarButtonItem" title="Delete" id="hab-zL-6FV">
+                            <connections>
+                                <action selector="deleteButtonTapped:" destination="X7c-x4-TyU" id="VDh-48-Uxx"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addressTextField" destination="4ua-pP-u0T" id="7Bp-PI-hRb"/>
+                        <outlet property="costTextField" destination="MPv-pj-2RM" id="xoD-qG-7Ut"/>
+                        <outlet property="deleteButton" destination="hab-zL-6FV" id="C0Z-CP-aWj"/>
+                        <outlet property="descriptionTextField" destination="IS3-po-VYa" id="IvM-Nc-Mxa"/>
+                        <outlet property="flatsNumberTextField" destination="2Js-0a-jq9" id="Agj-Ep-VuV"/>
+                        <outlet property="urlTextField" destination="QAK-YL-LuW" id="ziS-ty-WIf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEh-aG-0Oh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="73"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="daL-A3-F57"/>
+    </inferredMetricsTieBreakers>
 </document>

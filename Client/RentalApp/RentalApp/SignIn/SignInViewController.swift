@@ -36,7 +36,13 @@ class SignInViewController: UIViewController {
             .response { response in
                 do {
                     let users = try JSONDecoder().decode([User].self, from: response.data!)
-                    user = users.first!
+                    guard let parsedUser = users.first else {
+                        DispatchQueue.main.async {
+                            self.showAlert(message: "Incorrect username and/or password")
+                        }
+                        return
+                    }
+                    user = parsedUser
                     DispatchQueue.main.async {
                         if user.username == "admin" {
                             self.performSegue(withIdentifier: "goToAdmin", sender: nil)
