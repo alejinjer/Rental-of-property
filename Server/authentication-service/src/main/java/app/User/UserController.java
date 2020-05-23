@@ -57,4 +57,37 @@ public class UserController {
         String prettyJson = gson.toJson(resultList);
         return prettyJson;
     }
+
+    @PutMapping("/auth")
+    public String editUser(@RequestBody @RequestParam(value = "id", required = true) Integer id,
+                          @RequestParam(value = "username", required = true) String username,
+                          @RequestParam(value = "password", required = true) String password,
+                          @RequestParam(value = "name", required = true) String name,
+                          @RequestParam(value = "surname", required = true) String surname,
+                          @RequestParam(value = "email", required = true) String email,
+                          @RequestParam(value = "phone", required = true) String phone) {
+        List<User> resultList = new ArrayList<>();
+        Optional<User> test_id = userRepository.findById(id);
+        if (!test_id.isPresent()) {
+            return "{}";
+        }
+
+        Optional<User> test_username = userRepository.findByUsername(username);
+        if (test_username.isPresent() && test_username.get().getId() != id) {
+            return "{}";
+        }
+        User user = test_id.get();
+        user.setUsername(username);
+        user.setPassword(password);
+        user.setName(name);
+        user.setSurname(surname);
+        user.setEmail(email);
+        user.setPhone(phone);
+        userRepository.save(user);
+        resultList.add(user);
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        String prettyJson = gson.toJson(resultList);
+        return prettyJson;
+    }
+
 }
