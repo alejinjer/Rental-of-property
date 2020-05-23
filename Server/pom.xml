@@ -13,5 +13,6 @@
         <module>authentication-service</module>
         <module>api-gateway</module>
         <module>search-service</module>
+        <module>booking-service</module>
     </modules>
 </project>

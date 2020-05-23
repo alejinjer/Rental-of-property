@@ -53,7 +53,12 @@ public class ApartmentController {
             Optional<Apartment> test = apartmentRepository.findById(id);
             if (!test.isPresent())
                 return false;
-            Apartment apartment = new Apartment(flats_number, cost, description, address, img_url);
+            Apartment apartment = test.get();
+            apartment.setFlats_number(flats_number);
+            apartment.setCost(cost);
+            apartment.setDescription(description);
+            apartment.setAddress(address);
+            apartment.setImg_url(img_url);
             apartmentRepository.save(apartment);
             return true;
         } catch (Exception e) {
