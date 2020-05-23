@@ -11,17 +11,17 @@ public class BookingController {
     BookingClient bookingClient;
 
     @GetMapping("/bookings")
-    public String getBookingsByUserId(@RequestParam(value = "user_id", required = true) Integer user_id) {
-        return bookingClient.getBookingsByUserId(user_id);
+    public String getBookingsByUserId(@RequestParam(value = "userId", required = true) Integer userId) {
+        return bookingClient.getBookingsByUserId(userId);
     }
 
     @PostMapping("/bookings")
     public Boolean addBooking(@RequestBody
-                              @RequestParam(value = "apartment_id", required = true) Integer apartment_id,
-                              @RequestParam(value = "user_id", required = true) Integer user_id,
+                              @RequestParam(value = "apartmentId", required = true) Integer apartmentId,
+                              @RequestParam(value = "userId", required = true) Integer userId,
                               @RequestParam(value = "date_from", required = true) String date_from,
                               @RequestParam(value = "date_to", required = true) String date_to) {
-        return bookingClient.addBooking(apartment_id, user_id, date_from, date_to);
+        return bookingClient.addBooking(apartmentId, userId, date_from, date_to);
     }
 
     @DeleteMapping("/bookings")
