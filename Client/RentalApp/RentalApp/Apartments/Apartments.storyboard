@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wxv-gD-YJY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Apartments View Controller-->
+        <scene sceneID="nwc-l1-cob">
+            <objects>
+                <viewController storyboardIdentifier="ApartmentsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wxv-gD-YJY" customClass="ApartmentsViewController" customModule="RentalApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NFq-Dm-YFc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z5N-Yo-aqR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3ze-8T-Ebe" firstAttribute="bottom" secondItem="Z5N-Yo-aqR" secondAttribute="bottom" id="6FQ-dO-i44"/>
+                            <constraint firstItem="Z5N-Yo-aqR" firstAttribute="leading" secondItem="3ze-8T-Ebe" secondAttribute="leading" id="AvV-Ck-hkV"/>
+                            <constraint firstItem="Z5N-Yo-aqR" firstAttribute="top" secondItem="3ze-8T-Ebe" secondAttribute="top" id="EJI-AW-fdf"/>
+                            <constraint firstItem="3ze-8T-Ebe" firstAttribute="trailing" secondItem="Z5N-Yo-aqR" secondAttribute="trailing" id="MbC-9W-M73"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3ze-8T-Ebe"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Z5N-Yo-aqR" id="ayG-0j-shO"/>
+                        <segue destination="Pf9-uV-JnJ" kind="show" identifier="goToApartment" id="1pC-kQ-ad8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rf-Lk-acT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="104"/>
+        </scene>
+        <!--Apartment View Controller-->
+        <scene sceneID="JhC-Zy-5qu">
+            <objects>
+                <viewController id="Pf9-uV-JnJ" customClass="ApartmentViewController" customModule="RentalApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oql-g4-hc9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y5U-rD-h0b">
+                                <rect key="frame" x="20" y="20" width="374" height="373"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Y5U-rD-h0b" secondAttribute="height" multiplier="1:1" constant="1" id="NMD-qA-tmr"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ALl-ns-df8">
+                                <rect key="frame" x="20" y="413" width="374" height="232"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOQ-fo-kYJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNZ-54-kit">
+                                        <rect key="frame" x="0.0" y="30.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFG-Gw-7hD">
+                                        <rect key="frame" x="0.0" y="61" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yE2-nZ-AFd">
+                                        <rect key="frame" x="0.0" y="91.5" width="374" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G34-8K-Cxz">
+                                        <rect key="frame" x="0.0" y="122" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="KYg-3X-jzb"/>
+                                        </constraints>
+                                        <state key="normal" title="View Reviews"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duT-1B-iGM">
+                                        <rect key="frame" x="0.0" y="182" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Ki3-ys-rdr"/>
+                                        </constraints>
+                                        <state key="normal" title="Book this apartment"/>
+                                        <connections>
+                                            <action selector="bookingButtonTapped:" destination="Pf9-uV-JnJ" eventType="touchUpInside" id="acf-z7-Qgu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X7G-Cv-j75" firstAttribute="trailing" secondItem="ALl-ns-df8" secondAttribute="trailing" constant="20" id="5ZZ-c9-zEp"/>
+                            <constraint firstItem="Y5U-rD-h0b" firstAttribute="leading" secondItem="X7G-Cv-j75" secondAttribute="leading" constant="20" id="7in-pu-nrT"/>
+                            <constraint firstItem="ALl-ns-df8" firstAttribute="top" secondItem="Y5U-rD-h0b" secondAttribute="bottom" constant="20" id="CFd-wH-kDn"/>
+                            <constraint firstItem="X7G-Cv-j75" firstAttribute="trailing" secondItem="Y5U-rD-h0b" secondAttribute="trailing" constant="20" id="RfW-si-8VR"/>
+                            <constraint firstItem="Y5U-rD-h0b" firstAttribute="top" secondItem="X7G-Cv-j75" secondAttribute="top" constant="20" id="cvv-YT-21s"/>
+                            <constraint firstItem="ALl-ns-df8" firstAttribute="leading" secondItem="X7G-Cv-j75" secondAttribute="leading" constant="20" id="gfs-Vn-ItU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="X7G-Cv-j75"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QrB-ru-4ta"/>
+                    <connections>
+                        <outlet property="addressLabel" destination="yE2-nZ-AFd" id="GZZ-PP-okQ"/>
+                        <outlet property="apartmentImageView" destination="Y5U-rD-h0b" id="IzO-3x-MIm"/>
+                        <outlet property="bookButton" destination="duT-1B-iGM" id="0FX-bz-gEp"/>
+                        <outlet property="costLabel" destination="XNZ-54-kit" id="ihL-o6-6eM"/>
+                        <outlet property="descriptionLabel" destination="hFG-Gw-7hD" id="sbq-z3-Ap7"/>
+                        <outlet property="flatsCountLabel" destination="TOQ-fo-kYJ" id="9nl-2p-Z3B"/>
+                        <outlet property="viewReviewsButton" destination="G34-8K-Cxz" id="cmH-UR-y88"/>
+                        <segue destination="0fb-wS-BNW" kind="show" identifier="goToBooking" id="n8Q-nu-4pE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H8L-Yj-jeW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="104"/>
+        </scene>
+        <!--BookingViewController-->
+        <scene sceneID="K2s-7k-ej8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Booking" referencedIdentifier="BookingViewController" id="0fb-wS-BNW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nLo-WO-5nf"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7aJ-1k-10w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="63"/>
+        </scene>
+    </scenes>
+</document>

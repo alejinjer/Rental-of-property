@@ -17,17 +17,19 @@
                     </tabBar>
                     <connections>
                         <segue destination="0cP-Ed-nug" kind="relationship" relationship="viewControllers" id="CnV-zW-4aR"/>
+                        <segue destination="6Va-cV-go1" kind="relationship" relationship="viewControllers" id="w0c-Lo-LQc"/>
+                        <segue destination="w9F-ZR-EhE" kind="relationship" relationship="viewControllers" id="N0J-HV-OSk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dwy-xZ-3ym" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-839" y="-184"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="xax-Xq-Y5L">
             <objects>
                 <navigationController id="0cP-Ed-nug" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="eMV-wI-L2E"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="eMV-wI-L2E"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n52-Kp-Oow">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -38,7 +40,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tne-xo-SjV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28" y="-235"/>
+            <point key="canvasLocation" x="28" y="-367"/>
         </scene>
         <!--Profile-->
         <scene sceneID="f1I-fE-7Qo">
@@ -51,5 +53,64 @@
             </objects>
             <point key="canvasLocation" x="1053" y="-457"/>
         </scene>
+        <!--Apartments-->
+        <scene sceneID="gLY-TW-8u9">
+            <objects>
+                <navigationController id="6Va-cV-go1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Apartments" image="house" catalog="system" id="dQa-9R-Zr1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VCd-B8-42M">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="EPr-W3-sfj" kind="relationship" relationship="rootViewController" id="Ga5-yP-gGu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ca9-cX-NlO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28" y="321"/>
+        </scene>
+        <!--ApartmentsViewController-->
+        <scene sceneID="oy5-4K-Mt5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Apartments" referencedIdentifier="ApartmentsViewController" id="EPr-W3-sfj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RCA-0J-qzl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ffe-sk-bjT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1138" y="263"/>
+        </scene>
+        <!--Bookings-->
+        <scene sceneID="TqR-ow-Ruq">
+            <objects>
+                <navigationController id="w9F-ZR-EhE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bookings" image="bookmark.fill" catalog="system" id="luU-33-CtZ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uFA-zb-uXu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="i66-Ut-rII" kind="relationship" relationship="rootViewController" id="lz5-pO-4Ul"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Jm-8v-ZYp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="995"/>
+        </scene>
+        <!--BookingsListViewController-->
+        <scene sceneID="P1G-DX-Nl5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BookingsList" referencedIdentifier="BookingsListViewController" id="i66-Ut-rII" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Kpb-YH-VAg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9Y-H3-2oe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="967" y="886"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="bookmark.fill" catalog="system" width="56" height="64"/>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
+    </resources>
 </document>

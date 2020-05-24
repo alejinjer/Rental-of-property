@@ -20,6 +20,17 @@ class SignInViewController: UIViewController {
         }
     }
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(endEditing))
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc private func endEditing() {
+        view.endEditing(true)
+    }
+
     @IBAction func submitButtonTapped(_ sender: Any) {
         guard let username = usernameTextField.text, !username.isEmpty,
             let password = passwordTextField.text, !password.isEmpty else {
@@ -51,7 +62,6 @@ class SignInViewController: UIViewController {
                             self.performSegue(withIdentifier: "goToMenu", sender: nil)
                         }
                     }
-
                 }
                 catch {
                     self.showAlert(message: "Incorrect username and/or password")
