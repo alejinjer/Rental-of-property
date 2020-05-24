@@ -53,6 +53,12 @@ class AdminViewController: UIViewController {
             vc.apartment = apartment
         }
     }
+
+    @IBAction func logOutButtonTapped(_ sender: Any) {
+        user = nil
+        performSegue(withIdentifier: "goToStart", sender: nil)
+    }
+
 }
 
 extension AdminViewController: UITableViewDelegate {

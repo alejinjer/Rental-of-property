@@ -30,6 +30,11 @@
                         <viewLayoutGuide key="safeArea" id="krf-mv-lMz"/>
                     </view>
                     <navigationItem key="navigationItem" title="List of apartments" id="sfs-AT-aDJ">
+                        <barButtonItem key="leftBarButtonItem" title="Log Out" id="2sR-Ul-tjn">
+                            <connections>
+                                <action selector="logOutButtonTapped:" destination="4KO-6W-bjy" id="QQr-gY-njf"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="New" id="kwd-1R-cVt">
                             <connections>
                                 <action selector="addNewApartmentButtonTapped:" destination="4KO-6W-bjy" id="XLK-FB-02q"/>
@@ -41,11 +46,21 @@
                         <outlet property="tableView" destination="DpR-9f-Fhf" id="DUX-9Q-Tmb"/>
                         <segue destination="X7c-x4-TyU" kind="show" identifier="goToApartmentVC" id="iYD-nl-kUf"/>
                         <segue destination="X7c-x4-TyU" kind="show" identifier="goToApartmentEditing" id="daL-A3-F57"/>
+                        <segue destination="X1g-Gu-hDH" kind="unwind" identifier="goToStart" unwindAction="unwindToStartWithSegue:" id="C8p-mY-ZXh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EsJ-HM-tWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="X1g-Gu-hDH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="68" y="73"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="ivq-aT-EnS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="zs1-5n-xck" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSJ-9i-2s8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50" y="535"/>
         </scene>
         <!--New Apartment View Controller-->
         <scene sceneID="G08-fF-g3l">
