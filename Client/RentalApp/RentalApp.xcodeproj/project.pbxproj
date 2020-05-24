@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0660939291000901334B975B /* Pods_RentalApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84E9ABE7CF31E94DD3BB5C0 /* Pods_RentalApp.framework */; };
+		7757E78A2479292100FDE31A /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E7892479292100FDE31A /* StartViewController.swift */; };
+		7757E78D24795BE900FDE31A /* Apartments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7757E78C24795BE900FDE31A /* Apartments.storyboard */; };
+		7757E78F24795C0600FDE31A /* ApartmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E78E24795C0600FDE31A /* ApartmentsViewController.swift */; };
+		7757E7912479673900FDE31A /* ApartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E7902479673900FDE31A /* ApartmentViewController.swift */; };
+		7757E794247AA02300FDE31A /* Booking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7757E793247AA02300FDE31A /* Booking.storyboard */; };
+		7757E796247AA03000FDE31A /* BookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E795247AA03000FDE31A /* BookingViewController.swift */; };
+		7757E799247AB22D00FDE31A /* BookingsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7757E798247AB22D00FDE31A /* BookingsList.storyboard */; };
+		7757E79B247AB24400FDE31A /* BookingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E79A247AB24400FDE31A /* BookingsListViewController.swift */; };
+		7757E79F247AB31500FDE31A /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E79D247AB31500FDE31A /* BookingTableViewCell.swift */; };
+		7757E7A0247AB31500FDE31A /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7757E79E247AB31500FDE31A /* BookingTableViewCell.xib */; };
+		7757E7A2247AB3FC00FDE31A /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E7A1247AB3FC00FDE31A /* Booking.swift */; };
 		778C485B247694DB0046C727 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C485A247694DB0046C727 /* GlobalData.swift */; };
 		778C485D247695210046C727 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778C485C247695210046C727 /* Menu.storyboard */; };
 		778C4860247698190046C727 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C485F247698190046C727 /* ProfileViewController.swift */; };
@@ -37,6 +48,17 @@
 
 /* Begin PBXFileReference section */
 		2B1F8739A16394529F446FB7 /* Pods-RentalApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RentalApp.release.xcconfig"; path = "Target Support Files/Pods-RentalApp/Pods-RentalApp.release.xcconfig"; sourceTree = "<group>"; };
+		7757E7892479292100FDE31A /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		7757E78C24795BE900FDE31A /* Apartments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Apartments.storyboard; sourceTree = "<group>"; };
+		7757E78E24795C0600FDE31A /* ApartmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentsViewController.swift; sourceTree = "<group>"; };
+		7757E7902479673900FDE31A /* ApartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApartmentViewController.swift; sourceTree = "<group>"; };
+		7757E793247AA02300FDE31A /* Booking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Booking.storyboard; sourceTree = "<group>"; };
+		7757E795247AA03000FDE31A /* BookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingViewController.swift; sourceTree = "<group>"; };
+		7757E798247AB22D00FDE31A /* BookingsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BookingsList.storyboard; sourceTree = "<group>"; };
+		7757E79A247AB24400FDE31A /* BookingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingsListViewController.swift; sourceTree = "<group>"; };
+		7757E79D247AB31500FDE31A /* BookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		7757E79E247AB31500FDE31A /* BookingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
+		7757E7A1247AB3FC00FDE31A /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
 		778C485A247694DB0046C727 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		778C485C247695210046C727 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		778C485F247698190046C727 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +110,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7757E78B24795B4000FDE31A /* Apartments */ = {
+			isa = PBXGroup;
+			children = (
+				7757E78C24795BE900FDE31A /* Apartments.storyboard */,
+				7757E78E24795C0600FDE31A /* ApartmentsViewController.swift */,
+				7757E7902479673900FDE31A /* ApartmentViewController.swift */,
+			);
+			path = Apartments;
+			sourceTree = "<group>";
+		};
+		7757E792247AA01100FDE31A /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				7757E793247AA02300FDE31A /* Booking.storyboard */,
+				7757E795247AA03000FDE31A /* BookingViewController.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		7757E797247AB20C00FDE31A /* BookingsList */ = {
+			isa = PBXGroup;
+			children = (
+				7757E79C247AB2DA00FDE31A /* BookingCell */,
+				7757E798247AB22D00FDE31A /* BookingsList.storyboard */,
+				7757E79A247AB24400FDE31A /* BookingsListViewController.swift */,
+			);
+			path = BookingsList;
+			sourceTree = "<group>";
+		};
+		7757E79C247AB2DA00FDE31A /* BookingCell */ = {
+			isa = PBXGroup;
+			children = (
+				7757E79D247AB31500FDE31A /* BookingTableViewCell.swift */,
+				7757E79E247AB31500FDE31A /* BookingTableViewCell.xib */,
+			);
+			path = BookingCell;
+			sourceTree = "<group>";
+		};
 		778C485E2476980D0046C727 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +192,7 @@
 			children = (
 				779394B72474490C0071438F /* User.swift */,
 				77BB01AA2476F730004483E9 /* Apartment.swift */,
+				7757E7A1247AB3FC00FDE31A /* Booking.swift */,
 			);
 			path = "Modal Objects";
 			sourceTree = "<group>";
@@ -166,6 +227,9 @@
 		77BF0C8C2472F1E8007E422B /* RentalApp */ = {
 			isa = PBXGroup;
 			children = (
+				7757E797247AB20C00FDE31A /* BookingsList */,
+				7757E792247AA01100FDE31A /* Booking */,
+				7757E78B24795B4000FDE31A /* Apartments */,
 				77BB01A92476F71D004483E9 /* Modal Objects */,
 				77BB01A42476F1FC004483E9 /* Admin */,
 				778C485E2476980D0046C727 /* Profile */,
@@ -186,6 +250,7 @@
 		77BF0CA52472F66B007E422B /* Initial */ = {
 			isa = PBXGroup;
 			children = (
+				7757E7892479292100FDE31A /* StartViewController.swift */,
 				77BF0C912472F1E8007E422B /* InitialViewController.swift */,
 				77BF0C932472F1E8007E422B /* Main.storyboard */,
 				77BF0C982472F1EB007E422B /* LaunchScreen.storyboard */,
@@ -286,9 +351,13 @@
 				77BF0C972472F1EB007E422B /* Assets.xcassets in Resources */,
 				778C485D247695210046C727 /* Menu.storyboard in Resources */,
 				77BF0C952472F1E8007E422B /* Main.storyboard in Resources */,
+				7757E799247AB22D00FDE31A /* BookingsList.storyboard in Resources */,
+				7757E7A0247AB31500FDE31A /* BookingTableViewCell.xib in Resources */,
+				7757E78D24795BE900FDE31A /* Apartments.storyboard in Resources */,
 				778C48622476982E0046C727 /* Profile.storyboard in Resources */,
 				77BF0CAD2472F73D007E422B /* SignUp.storyboard in Resources */,
 				77BB01AF2476F7EE004483E9 /* ApartmentTableViewCell.xib in Resources */,
+				7757E794247AA02300FDE31A /* Booking.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,21 +411,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				77BB01B4247702BB004483E9 /* NewApartmentViewController.swift in Sources */,
+				7757E78F24795C0600FDE31A /* ApartmentsViewController.swift in Sources */,
 				77BB01A62476F222004483E9 /* AdminViewController.swift in Sources */,
+				7757E79F247AB31500FDE31A /* BookingTableViewCell.swift in Sources */,
 				77BF0CA22472F64A007E422B /* SignInViewController.swift in Sources */,
 				77BF0C922472F1E8007E422B /* InitialViewController.swift in Sources */,
+				7757E7912479673900FDE31A /* ApartmentViewController.swift in Sources */,
 				778C4860247698190046C727 /* ProfileViewController.swift in Sources */,
+				7757E79B247AB24400FDE31A /* BookingsListViewController.swift in Sources */,
 				779394B82474490C0071438F /* User.swift in Sources */,
 				778C486424769C830046C727 /* MenuViewController.swift in Sources */,
 				77BB01B22476FA17004483E9 /* ImageView.swift in Sources */,
 				779394BB247451B90071438F /* TextField.swift in Sources */,
 				77BF0C8E2472F1E8007E422B /* AppDelegate.swift in Sources */,
+				7757E78A2479292100FDE31A /* StartViewController.swift in Sources */,
 				77BF0C902472F1E8007E422B /* SceneDelegate.swift in Sources */,
 				778C485B247694DB0046C727 /* GlobalData.swift in Sources */,
 				77BB01AD2476F7D9004483E9 /* ApartmentTableViewCell.swift in Sources */,
 				779394BD247455570071438F /* ViewController.swift in Sources */,
 				77BB01AB2476F730004483E9 /* Apartment.swift in Sources */,
+				7757E796247AA03000FDE31A /* BookingViewController.swift in Sources */,
 				77BF0CA42472F652007E422B /* SignUpViewController.swift in Sources */,
+				7757E7A2247AB3FC00FDE31A /* Booking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +586,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alejinjer.RentalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -528,7 +604,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alejinjer.RentalApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

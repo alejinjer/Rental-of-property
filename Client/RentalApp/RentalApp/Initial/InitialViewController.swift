@@ -11,5 +11,12 @@ class InitialViewController: UIViewController {
             signUpButton.layer.cornerRadius = 10
         }
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+
+    @IBAction func unwindToStart(segue:UIStoryboardSegue) { }
 }
 

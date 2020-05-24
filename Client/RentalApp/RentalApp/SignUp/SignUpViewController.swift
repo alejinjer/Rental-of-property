@@ -60,7 +60,13 @@ class SignUpViewController: UIViewController {
             .response { response in
                 do {
                     let users = try JSONDecoder().decode([User].self, from: response.data!)
-                    user = users.first!
+                    guard let parsedUser = users.first else {
+                        DispatchQueue.main.async {
+                            self.showAlert(message: "Username is already taken")
+                        }
+                        return
+                    }
+                    user = parsedUser
                     self.performSegue(withIdentifier: "gotoMenu", sender: nil)
                 }
                 catch {
