@@ -11,12 +11,12 @@ public class Review {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Integer id;
-    private Integer userId;
+    private String username;
     private Integer apartmentId;
     private String text;
 
-    public Review(Integer userId, Integer apartmentId, String text) {
-        this.userId = userId;
+    public Review(String username, Integer apartmentId, String text) {
+        this.username = username;
         this.apartmentId = apartmentId;
         this.text = text;
     }
@@ -32,12 +32,12 @@ public class Review {
         this.id = id;
     }
 
-    public Integer getUserId() {
-        return userId;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserId(Integer userId) {
-        this.userId = userId;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public Integer getApartmentId() {

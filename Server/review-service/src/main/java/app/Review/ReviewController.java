@@ -27,11 +27,11 @@ public class ReviewController {
 
     @PostMapping("/reviews")
     public String createReview(@RequestBody
-                             @RequestParam(value = "userId", required = true) Integer userId,
+                             @RequestParam(value = "userId", required = true) String username,
                              @RequestParam(value = "apartmentId", required = true) Integer apartmentId,
                              @RequestParam(value = "text", required = true) String text) {
         List<Review> resultList = new ArrayList<>();
-        Review review = new Review(userId, apartmentId, text);
+        Review review = new Review(username, apartmentId, text);
         reviewRepository.save(review);
         resultList.add(review);
         Gson gson = new GsonBuilder().setPrettyPrinting().create();

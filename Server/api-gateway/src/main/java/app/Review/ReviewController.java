@@ -21,10 +21,10 @@ public class ReviewController {
 
     @PostMapping("/reviews")
     public String createReview(@RequestBody
-                               @RequestParam(value = "userId", required = true) Integer userId,
+                               @RequestParam(value = "userId", required = true) String username,
                                @RequestParam(value = "apartmentId", required = true) Integer apartmentId,
                                @RequestParam(value = "text", required = true) String text) {
-        return reviewClient.createReview(userId, apartmentId, text);
+        return reviewClient.createReview(username, apartmentId, text);
     }
 
     @PutMapping("/reviews")
