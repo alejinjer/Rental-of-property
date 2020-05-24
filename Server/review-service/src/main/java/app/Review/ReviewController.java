@@ -27,7 +27,7 @@ public class ReviewController {
 
     @PostMapping("/reviews")
     public String createReview(@RequestBody
-                             @RequestParam(value = "userId", required = true) String username,
+                             @RequestParam(value = "username", required = true) String username,
                              @RequestParam(value = "apartmentId", required = true) Integer apartmentId,
                              @RequestParam(value = "text", required = true) String text) {
         List<Review> resultList = new ArrayList<>();

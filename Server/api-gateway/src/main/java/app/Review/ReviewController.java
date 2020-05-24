@@ -16,12 +16,12 @@ public class ReviewController {
 
     @GetMapping("/reviews")
     public String getReviewsByApartmentId(@RequestParam(value = "apartmentId", required = true) Integer apartmentId) {
-        return getReviewsByApartmentId(apartmentId);
+        return reviewClient.getReviewsByApartmentId(apartmentId);
     }
 
     @PostMapping("/reviews")
     public String createReview(@RequestBody
-                               @RequestParam(value = "userId", required = true) String username,
+                               @RequestParam(value = "username", required = true) String username,
                                @RequestParam(value = "apartmentId", required = true) Integer apartmentId,
                                @RequestParam(value = "text", required = true) String text) {
         return reviewClient.createReview(username, apartmentId, text);
