@@ -70,7 +70,7 @@ class SignUpViewController: UIViewController {
                     self.performSegue(withIdentifier: "gotoMenu", sender: nil)
                 }
                 catch {
-                    self.showAlert(message: "Username is already taken")
+                    self.showAlert(message: "Server error")
                 }
         }
     }

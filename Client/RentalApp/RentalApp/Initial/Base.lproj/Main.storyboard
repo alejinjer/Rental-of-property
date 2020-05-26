@@ -20,7 +20,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5h-eB-cYQ">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
-                                        <color key="backgroundColor" red="1" green="0.18557664645779293" blue="0.70078452880721986" alpha="0.17342679794520549" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.40123638438719345" green="0.23643176284280343" blue="1" alpha="0.17342679794520549" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ZY7-Xk-nSr"/>
                                         </constraints>
@@ -34,7 +34,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24C-k9-r9R">
                                         <rect key="frame" x="0.0" y="62" width="250" height="50"/>
-                                        <color key="backgroundColor" red="1" green="0.18557664645779293" blue="0.70078452880721986" alpha="0.17342679794520549" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.78418403859999997" green="0.72445595259999995" blue="0.76863271" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="abD-5q-iOW"/>
                                         </constraints>
@@ -54,17 +54,16 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="created by @alejinjer. 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKx-P4-0ww">
                                 <rect key="frame" x="103" y="850.5" width="208" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to RentalApp!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIl-8G-QFn">
                                 <rect key="frame" x="10" y="113" width="394" height="81.5"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="24"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.8538799882" green="0.83373928070000003" blue="0.72155147789999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="gIl-8G-QFn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="6DX-Al-Pq7"/>
                             <constraint firstItem="glG-SO-kq9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6OS-Hx-rHo"/>

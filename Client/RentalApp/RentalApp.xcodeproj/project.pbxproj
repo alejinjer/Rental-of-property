@@ -19,6 +19,13 @@
 		7757E79F247AB31500FDE31A /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E79D247AB31500FDE31A /* BookingTableViewCell.swift */; };
 		7757E7A0247AB31500FDE31A /* BookingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7757E79E247AB31500FDE31A /* BookingTableViewCell.xib */; };
 		7757E7A2247AB3FC00FDE31A /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E7A1247AB3FC00FDE31A /* Booking.swift */; };
+		7757E7A5247ACB9D00FDE31A /* ReviewsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7757E7A4247ACB9D00FDE31A /* ReviewsList.storyboard */; };
+		7757E7A7247ACBAB00FDE31A /* ReviewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E7A6247ACBAB00FDE31A /* ReviewsListViewController.swift */; };
+		7757E7A9247ACCED00FDE31A /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E7A8247ACCED00FDE31A /* Reviews.swift */; };
+		7757E7AD247AD0AB00FDE31A /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E7AB247AD0AB00FDE31A /* ReviewTableViewCell.swift */; };
+		7757E7AE247AD0AB00FDE31A /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7757E7AC247AD0AB00FDE31A /* ReviewTableViewCell.xib */; };
+		7757E7B1247AE23300FDE31A /* NewReview.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7757E7B0247AE23300FDE31A /* NewReview.storyboard */; };
+		7757E7B3247AE24500FDE31A /* NewReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7757E7B2247AE24500FDE31A /* NewReviewViewController.swift */; };
 		778C485B247694DB0046C727 /* GlobalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C485A247694DB0046C727 /* GlobalData.swift */; };
 		778C485D247695210046C727 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 778C485C247695210046C727 /* Menu.storyboard */; };
 		778C4860247698190046C727 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778C485F247698190046C727 /* ProfileViewController.swift */; };
@@ -59,6 +66,13 @@
 		7757E79D247AB31500FDE31A /* BookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
 		7757E79E247AB31500FDE31A /* BookingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookingTableViewCell.xib; sourceTree = "<group>"; };
 		7757E7A1247AB3FC00FDE31A /* Booking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		7757E7A4247ACB9D00FDE31A /* ReviewsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReviewsList.storyboard; sourceTree = "<group>"; };
+		7757E7A6247ACBAB00FDE31A /* ReviewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsListViewController.swift; sourceTree = "<group>"; };
+		7757E7A8247ACCED00FDE31A /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
+		7757E7AB247AD0AB00FDE31A /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		7757E7AC247AD0AB00FDE31A /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
+		7757E7B0247AE23300FDE31A /* NewReview.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewReview.storyboard; sourceTree = "<group>"; };
+		7757E7B2247AE24500FDE31A /* NewReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReviewViewController.swift; sourceTree = "<group>"; };
 		778C485A247694DB0046C727 /* GlobalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalData.swift; sourceTree = "<group>"; };
 		778C485C247695210046C727 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		778C485F247698190046C727 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +162,34 @@
 			path = BookingCell;
 			sourceTree = "<group>";
 		};
+		7757E7A3247ACB8300FDE31A /* ReviewsList */ = {
+			isa = PBXGroup;
+			children = (
+				7757E7AA247AD09500FDE31A /* ReviewCell */,
+				7757E7A4247ACB9D00FDE31A /* ReviewsList.storyboard */,
+				7757E7A6247ACBAB00FDE31A /* ReviewsListViewController.swift */,
+			);
+			path = ReviewsList;
+			sourceTree = "<group>";
+		};
+		7757E7AA247AD09500FDE31A /* ReviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7757E7AB247AD0AB00FDE31A /* ReviewTableViewCell.swift */,
+				7757E7AC247AD0AB00FDE31A /* ReviewTableViewCell.xib */,
+			);
+			path = ReviewCell;
+			sourceTree = "<group>";
+		};
+		7757E7AF247AE21800FDE31A /* NewReview */ = {
+			isa = PBXGroup;
+			children = (
+				7757E7B0247AE23300FDE31A /* NewReview.storyboard */,
+				7757E7B2247AE24500FDE31A /* NewReviewViewController.swift */,
+			);
+			path = NewReview;
+			sourceTree = "<group>";
+		};
 		778C485E2476980D0046C727 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +235,7 @@
 				779394B72474490C0071438F /* User.swift */,
 				77BB01AA2476F730004483E9 /* Apartment.swift */,
 				7757E7A1247AB3FC00FDE31A /* Booking.swift */,
+				7757E7A8247ACCED00FDE31A /* Reviews.swift */,
 			);
 			path = "Modal Objects";
 			sourceTree = "<group>";
@@ -227,6 +270,8 @@
 		77BF0C8C2472F1E8007E422B /* RentalApp */ = {
 			isa = PBXGroup;
 			children = (
+				7757E7AF247AE21800FDE31A /* NewReview */,
+				7757E7A3247ACB8300FDE31A /* ReviewsList */,
 				7757E797247AB20C00FDE31A /* BookingsList */,
 				7757E792247AA01100FDE31A /* Booking */,
 				7757E78B24795B4000FDE31A /* Apartments */,
@@ -348,8 +393,11 @@
 				77BB01A82476F22A004483E9 /* Admin.storyboard in Resources */,
 				77BF0CAB2472F6F3007E422B /* SignIn.storyboard in Resources */,
 				77BF0C9A2472F1EB007E422B /* LaunchScreen.storyboard in Resources */,
+				7757E7AE247AD0AB00FDE31A /* ReviewTableViewCell.xib in Resources */,
 				77BF0C972472F1EB007E422B /* Assets.xcassets in Resources */,
 				778C485D247695210046C727 /* Menu.storyboard in Resources */,
+				7757E7A5247ACB9D00FDE31A /* ReviewsList.storyboard in Resources */,
+				7757E7B1247AE23300FDE31A /* NewReview.storyboard in Resources */,
 				77BF0C952472F1E8007E422B /* Main.storyboard in Resources */,
 				7757E799247AB22D00FDE31A /* BookingsList.storyboard in Resources */,
 				7757E7A0247AB31500FDE31A /* BookingTableViewCell.xib in Resources */,
@@ -411,6 +459,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77BB01B4247702BB004483E9 /* NewApartmentViewController.swift in Sources */,
+				7757E7A9247ACCED00FDE31A /* Reviews.swift in Sources */,
 				7757E78F24795C0600FDE31A /* ApartmentsViewController.swift in Sources */,
 				77BB01A62476F222004483E9 /* AdminViewController.swift in Sources */,
 				7757E79F247AB31500FDE31A /* BookingTableViewCell.swift in Sources */,
@@ -418,6 +467,7 @@
 				77BF0C922472F1E8007E422B /* InitialViewController.swift in Sources */,
 				7757E7912479673900FDE31A /* ApartmentViewController.swift in Sources */,
 				778C4860247698190046C727 /* ProfileViewController.swift in Sources */,
+				7757E7AD247AD0AB00FDE31A /* ReviewTableViewCell.swift in Sources */,
 				7757E79B247AB24400FDE31A /* BookingsListViewController.swift in Sources */,
 				779394B82474490C0071438F /* User.swift in Sources */,
 				778C486424769C830046C727 /* MenuViewController.swift in Sources */,
@@ -427,7 +477,9 @@
 				7757E78A2479292100FDE31A /* StartViewController.swift in Sources */,
 				77BF0C902472F1E8007E422B /* SceneDelegate.swift in Sources */,
 				778C485B247694DB0046C727 /* GlobalData.swift in Sources */,
+				7757E7B3247AE24500FDE31A /* NewReviewViewController.swift in Sources */,
 				77BB01AD2476F7D9004483E9 /* ApartmentTableViewCell.swift in Sources */,
+				7757E7A7247ACBAB00FDE31A /* ReviewsListViewController.swift in Sources */,
 				779394BD247455570071438F /* ViewController.swift in Sources */,
 				77BB01AB2476F730004483E9 /* Apartment.swift in Sources */,
 				7757E796247AA03000FDE31A /* BookingViewController.swift in Sources */,

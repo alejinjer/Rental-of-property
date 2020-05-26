@@ -170,7 +170,7 @@ class ProfileViewController: UIViewController {
                     }
                 }
                 catch {
-                    self.showAlert(message: "Username is already taken")
+                    self.showAlert(message: "Server error")
                 }
         }
     }

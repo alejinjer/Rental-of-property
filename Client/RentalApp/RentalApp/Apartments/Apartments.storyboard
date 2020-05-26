@@ -85,6 +85,9 @@
                                             <constraint firstAttribute="height" constant="50" id="KYg-3X-jzb"/>
                                         </constraints>
                                         <state key="normal" title="View Reviews"/>
+                                        <connections>
+                                            <action selector="viewReviewsButtonTapped:" destination="Pf9-uV-JnJ" eventType="touchUpInside" id="oOS-kG-Y9B"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duT-1B-iGM">
                                         <rect key="frame" x="0.0" y="182" width="374" height="50"/>
@@ -120,11 +123,12 @@
                         <outlet property="flatsCountLabel" destination="TOQ-fo-kYJ" id="9nl-2p-Z3B"/>
                         <outlet property="viewReviewsButton" destination="G34-8K-Cxz" id="cmH-UR-y88"/>
                         <segue destination="0fb-wS-BNW" kind="show" identifier="goToBooking" id="n8Q-nu-4pE"/>
+                        <segue destination="c9G-KW-Lve" kind="show" identifier="goToReviews" id="2EP-RP-THh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8L-Yj-jeW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="104"/>
+            <point key="canvasLocation" x="1146" y="115"/>
         </scene>
         <!--BookingViewController-->
         <scene sceneID="K2s-7k-ej8">
@@ -135,6 +139,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7aJ-1k-10w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1800" y="63"/>
+        </scene>
+        <!--ReviewsListViewController-->
+        <scene sceneID="z8Y-Ie-g3k">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ReviewsList" referencedIdentifier="ReviewsListViewController" id="c9G-KW-Lve" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ery-XD-lJH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U1Z-Px-eCu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870" y="210"/>
         </scene>
     </scenes>
 </document>

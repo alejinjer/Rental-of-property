@@ -26,7 +26,6 @@ class ApartmentsViewController: UIViewController {
                 do {
                     apartments = try JSONDecoder().decode([Apartment].self, from: response.data!)
                     self.tableView.reloadData()
-                    print(apartments)
                 }
                 catch {
                     self.showAlert(message: "Server error")

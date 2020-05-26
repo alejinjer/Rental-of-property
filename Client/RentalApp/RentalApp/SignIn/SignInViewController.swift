@@ -64,7 +64,7 @@ class SignInViewController: UIViewController {
                     }
                 }
                 catch {
-                    self.showAlert(message: "Incorrect username and/or password")
+                    self.showAlert(message: "Server error")
                 }
         }
     }

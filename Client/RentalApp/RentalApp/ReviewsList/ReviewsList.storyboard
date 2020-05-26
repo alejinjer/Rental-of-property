@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f5P-rB-uKB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Reviews-->
+        <scene sceneID="0CU-12-aWr">
+            <objects>
+                <viewController storyboardIdentifier="ReviewsListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="f5P-rB-uKB" customClass="ReviewsListViewController" customModule="RentalApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lux-mp-ulW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ofG-db-piX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="stG-VN-5XL" firstAttribute="trailing" secondItem="ofG-db-piX" secondAttribute="trailing" id="BD8-A6-Fok"/>
+                            <constraint firstItem="ofG-db-piX" firstAttribute="top" secondItem="stG-VN-5XL" secondAttribute="top" id="Qt3-4q-TXb"/>
+                            <constraint firstItem="stG-VN-5XL" firstAttribute="bottom" secondItem="ofG-db-piX" secondAttribute="bottom" id="XWw-1T-rHM"/>
+                            <constraint firstItem="ofG-db-piX" firstAttribute="leading" secondItem="stG-VN-5XL" secondAttribute="leading" id="pzr-f5-R6f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="stG-VN-5XL"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Reviews" id="oKg-T8-cgv">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="Jre-Sa-8fi">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="f5P-rB-uKB" id="dpD-oI-DtO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="ofG-db-piX" id="fYu-Gh-6dv"/>
+                        <segue destination="odY-nQ-P3T" kind="show" identifier="addNewReview" id="Y06-vU-wx2"/>
+                        <segue destination="odY-nQ-P3T" kind="show" identifier="updateTheReview" id="Q0H-Vv-gRt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XuB-NQ-f6v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="358" y="-220"/>
+        </scene>
+        <!--NewReviewViewController-->
+        <scene sceneID="CGh-4Z-ttR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="NewReview" referencedIdentifier="NewReviewViewController" id="odY-nQ-P3T" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cZc-YE-VVK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQV-3L-1l8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1060" y="-285"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Y06-vU-wx2"/>
+    </inferredMetricsTieBreakers>
+</document>

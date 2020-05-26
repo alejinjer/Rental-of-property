@@ -88,7 +88,6 @@ class NewApartmentViewController: UIViewController {
             .response { response in
                 do {
                     let result = try JSONDecoder().decode(Bool.self, from: response.data!)
-                    print(result)
                     DispatchQueue.main.async {
                         if result {
                             self.navigationController?.popViewController(animated: true)
@@ -99,7 +98,7 @@ class NewApartmentViewController: UIViewController {
                     }
                 }
                 catch {
-                    self.showAlert(message: "Error occured")
+                    self.showAlert(message: "Server error")
                 }
         }
     }
@@ -130,7 +129,6 @@ class NewApartmentViewController: UIViewController {
             .response { response in
                 do {
                     let result = try JSONDecoder().decode(Bool.self, from: response.data!)
-                    print(result)
                     DispatchQueue.main.async {
                         if result {
                             self.navigationController?.popViewController(animated: true)
@@ -141,7 +139,7 @@ class NewApartmentViewController: UIViewController {
                     }
                 }
                 catch {
-                    self.showAlert(message: "Error occured")
+                    self.showAlert(message: "Server error")
                 }
         }
     }
@@ -160,7 +158,6 @@ class NewApartmentViewController: UIViewController {
             .response { response in
                 do {
                     let result = try JSONDecoder().decode(Bool.self, from: response.data!)
-                    print(result)
                     DispatchQueue.main.async {
                         if result {
                             self.navigationController?.popViewController(animated: true)
@@ -171,7 +168,7 @@ class NewApartmentViewController: UIViewController {
                     }
                 }
                 catch {
-                    self.showAlert(message: "Error occured")
+                    self.showAlert(message: "Server error")
                 }
         }
     }
